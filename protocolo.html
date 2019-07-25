@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800&display=swap" rel="stylesheet">
+    <link href="https://cdn.remixicon.com/releases/v1.3.0/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/module_conditions.css">
+    <title>Protocolos</title>
+</head>
+<body>
+    <div class="protocolo_product_ats">
+        <h1 class="titulo_protocolo">Condiciones progresivas del sistema digestipo etapas 1 y 2 <br> <span>Categoría 3</span></h1>
+        <h4 class="descripcion_protocolo">Condiciones relacionadas a este protocolo</h4>
+        
+        <main>
+            <ul class="lista_enfermedades" v-for="condiciones in condiciones_cat3.slice(0,1)">
+                <li v-for="condicion in condiciones.condicion">{{ condicion.title }}</li>
+            </ul>
+
+
+            <div class="protocolos_fase">
+                <div class="titulo_fase">
+                    <h1>FASE #1</h1>
+                    <span>Duración 180 días</span>
+                    <button><i class="remixicon-question-line"></i></button>
+                </div>
+                <div class="productos_protocolo">
+                    <div class="image_producto_protocolo">
+                        <img src="assets/img/botellas.jpg" alt="">
+                    </div>
+                    <div class="descripcion_producto_protocolo">
+                        <p class="nombre_producto_protocolo">Immune BioGreenCell</p>
+                        <p class="dosis_producto_protocolo">Dosís del producto</p>
+                        <p class="precio_producto_protocolo"><span>$</span>560.95</p>
+                    </div>
+                </div>
+
+                <div class="productos_protocolo">
+                        <div class="image_producto_protocolo">
+                            <img src="assets/img/botellas.jpg" alt="">
+                        </div>
+                        <div class="descripcion_producto_protocolo">
+                            <p class="nombre_producto_protocolo">Acido Ascorbico</p>
+                            <p class="dosis_producto_protocolo">Dosís del producto probando dos filas del elemento</p>
+                            <p class="precio_producto_protocolo"><span>$</span>560.95</p>
+                        </div>
+                </div>
+
+                <a class="btn_comprar_protocolo" href="#">comprar ahora<i class="remixicon-shopping-cart-line"></i></a>
+            </div>
+
+
+
+            <div class="protocolos_fase">
+                    <div class="titulo_fase">
+                        <h1>FASE #2</h1>
+                        <span>Duración 180 días</span>
+                        <button><i class="remixicon-question-line"></i></button>
+                    </div>
+                    <div class="productos_protocolo">
+                        <div class="image_producto_protocolo">
+                            <img src="assets/img/botellas.jpg" alt="">
+                        </div>
+                        <div class="descripcion_producto_protocolo">
+                            <p class="nombre_producto_protocolo">Immune BioGreenCell</p>
+                            <p class="dosis_producto_protocolo">Dosís del producto</p>
+                            <p class="precio_producto_protocolo"><span>$</span>560.95</p>
+                        </div>
+                    </div>
+    
+                    <div class="productos_protocolo">
+                            <div class="image_producto_protocolo">
+                                <img src="assets/img/botellas.jpg" alt="">
+                            </div>
+                            <div class="descripcion_producto_protocolo">
+                                <p class="nombre_producto_protocolo">Acido Ascorbico</p>
+                                <p class="dosis_producto_protocolo">Dosís del producto probando dos filas del elemento</p>
+                                <p class="precio_producto_protocolo"><span>$</span>560.95</p>
+                            </div>
+                    </div>
+    
+                    <a class="btn_comprar_protocolo" href="#">Comprar ahora<i class="remixicon-shopping-cart-line"></i></a>
+                </div>
+
+
+        </main>   
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="assets/js/module_conditions.js"></script>
+</body>
+</html>

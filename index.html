@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800&display=swap" rel="stylesheet">
+    <link href="https://cdn.remixicon.com/releases/v1.3.0/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/module_conditions.css">
+    <title>BioGreenCell</title>
+</head>
+
+<body>
+    <div class="protocolo">
+        <h1 class="titulo_protocolo">Protocolo integrativo de alta complejidad <br> <span>Categoría 2</span></h1>
+        <h4 class="descripcion_protocolo">Seleccione su condición para ver el protocolo sugerido</h4>
+        <main>
+            <div class="categorias">
+                <div class="cont_categoria" v-for="(condiciones, index) in condiciones_cat2" :key="condiciones.id">
+                    <p class="titulo_cont_categoria">{{ condiciones.titulo }}</p>
+                            <ul class="enfermedades_por_categoria" v-if="condiciones.listaReducida">
+                                    <li v-for="condicion in condiciones.condicion.slice(0,5)"><span><i class="remixicon-check-fill"></i></span> {{ condicion.title }}</li>
+                            </ul>
+                            <ul class="enfermedades_por_categoria" v-else>
+                                    <li v-for="condicionlista in condiciones.condicion"><span><i class="remixicon-check-fill"></i></span> {{ condicionlista.title }}</li>
+                            </ul>
+                    <div class="row-btn">
+                        <button v-show="condiciones.listaReducida" class="btnexpandir" @click="cambioEstado(condiciones.id, condiciones_cat2)">{{(condiciones.condicion.length-5 >= 1)? condiciones.condicion.length-5+" condiciones mas":'No hay mas condiciones'}}</button>
+                        <button v-show="!condiciones.listaReducida" class="btnexpandir" @click="cambioEstado(condiciones.id, condiciones_cat2)">Ver menos</button>
+                        <a class="btn_verprotocolo" href="protocolo.html">Ver protocolo <i class="remixicon-arrow-right-s-line"></i></a>
+                    </div>
+                </div>
+            </div>
+        <h1 class="titulo_protocolo">Protocolo integrativo de alta complejidad <br> <span>Categoría 3</span></h1>
+        <h4 class="descripcion_protocolo">Seleccione su condición para ver el protocolo sugerido</h4>
+        <div class="categorias">
+                <div class="cont_categoria" v-for="(condiciones, index) in condiciones_cat3" :key="condiciones.id">
+                    <p class="titulo_cont_categoria">{{ condiciones.titulo }}</p>
+                            <ul class="enfermedades_por_categoria" v-if="condiciones.listaReducida">
+                                    <li v-for="condicion in condiciones.condicion.slice(0,5)"><span><i class="remixicon-check-fill"></i></span> {{ condicion.title }}</li>
+                            </ul>
+                            <ul class="enfermedades_por_categoria" v-else>
+                                    <li v-for="condicionlista in condiciones.condicion"><span><i class="remixicon-check-fill"></i></span> {{ condicionlista.title }}</li>
+                            </ul>
+                    <div class="row-btn">
+                        <button v-show="condiciones.listaReducida" class="btnexpandir" @click="cambioEstado(condiciones.id,condiciones_cat3)">{{(condiciones.condicion.length-5 >= 1)? condiciones.condicion.length-5+" condiciones mas":'No hay mas condiciones'}}</button>
+                        <button v-show="!condiciones.listaReducida" class="btnexpandir" @click="cambioEstado(condiciones.id,condiciones_cat3)">Ver menos</button>
+                        <a class="btn_verprotocolo" href="protocolo.html">Ver protocolo <i class="remixicon-arrow-right-s-line"></i></a>
+                    </div>
+                </div>
+            </div>
+
+        <h1 class="titulo_protocolo">Protocolo integrativo de alta complejidad <br> <span>Categoría 4</span></h1>
+        <h4 class="descripcion_protocolo">Seleccione su condición para ver el protocolo sugerido</h4>
+            <div class="categorias">
+                    <div class="categorias">
+                            <div class="cont_categoria" v-for="(condiciones, index) in condiciones_cat4" :key="condiciones.id">
+                                <p class="titulo_cont_categoria">{{ condiciones.titulo }}</p>
+                                        <ul class="enfermedades_por_categoria" v-if="condiciones.listaReducida">
+                                                <li v-for="condicion in condiciones.condicion.slice(0,5)"><span><i class="remixicon-check-fill"></i></span> {{ condicion.title }}</li>
+                                        </ul>
+                                        <ul class="enfermedades_por_categoria" v-else>
+                                                <li v-for="condicionlista in condiciones.condicion"><span><i class="remixicon-check-fill"></i></span> {{ condicionlista.title }}</li>
+                                        </ul>
+                                <div class="row-btn">
+                                    <button v-show="condiciones.listaReducida" class="btnexpandir" @click="cambioEstado(condiciones.id,condiciones_cat4)">{{(condiciones.condicion.length-5 >= 1)? condiciones.condicion.length-5+" condiciones mas":'No hay mas condiciones'}}</button>
+                                    <button v-show="!condiciones.listaReducida" class="btnexpandir" @click="cambioEstado(condiciones.id,condiciones_cat4)">Ver menos</button>
+                                    <a class="btn_verprotocolo" href="protocolo.html">Ver protocolo <i class="remixicon-arrow-right-s-line"></i></a>
+                                </div>
+                            </div>
+                        </div>
+            </div>
+        </main>   
+    </div>
+    
+  
+
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="assets/js/module_conditions.js"></script>
+</body>
+</html>
