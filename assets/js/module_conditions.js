@@ -251,6 +251,16 @@ const vm = new Vue({
             },
         ],
 
+        fases: [
+            {id: 1, categoria: 'categoria 2', titulo: 'Fase 1', duracion: '180 días', 
+            producto1: 'Immune Bio Green Cell', dosisp1: '20 ml. 4 veces al día', numbotellasmesp1: '10 Botellas', precop1: '560.95',
+            producto2: 'Ascorbic Acid', dosisp2: 'Un scoop 2 veces al día, mezclado con jugo de frutas o agua', numbotellasmesp2:'1 botella', preciop2: '54.95'},
+            {id: 2, categoria: 'categoria 2', titulo: 'Fase 2', duracion: '180 días', 
+            producto1: 'Immune Bio Green Cell', dosisp1: '10 ml. 2 veces al día', numbotellasmesp1: '3 Botellas', precop1: '249.95',
+            producto2: 'Ascorbic Acid', dosisp2: 'Un scoop 2 veces al día, mezclado con jugo de frutas o agua', numbotellasmesp2:'1 botella', preciop2: '54.95'},
+
+        ]
+
     },
     methods: {
         cambioEstado(id,cate){
