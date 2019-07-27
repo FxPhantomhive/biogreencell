@@ -20,10 +20,10 @@
                 <div class="cont_categoria" v-for="(condiciones, index) in condiciones_cat2" :key="condiciones.id">
                     <p class="titulo_cont_categoria">{{ condiciones.titulo }}</p>
                             <ul class="enfermedades_por_categoria" v-if="condiciones.listaReducida">
-                                    <li v-for="condicion in condiciones.condicion.slice(0,5)"><span><i class="remixicon-check-fill"></i></span> {{ condicion.title }}</li>
+                                    <li v-for="condicion in condiciones.condicion.slice(0,5)"><span><i class="remixicon-checkbox-blank-circle-fill"></i></span> {{ condicion.title }}</li>
                             </ul>
                             <ul class="enfermedades_por_categoria" v-else>
-                                    <li v-for="condicionlista in condiciones.condicion"><span><i class="remixicon-check-fill"></i></span> {{ condicionlista.title }}</li>
+                                    <li v-for="condicionlista in condiciones.condicion"><span><i class="remixicon-checkbox-blank-circle-fill"></i></span> {{ condicionlista.title }}</li>
                             </ul>
                     <div class="row-btn">
                         <button v-show="condiciones.listaReducida" class="btnexpandir" @click="cambioEstado(condiciones.id, condiciones_cat2)">{{(condiciones.condicion.length-5 >= 1)? condiciones.condicion.length-5+" condiciones mas":'No hay mas condiciones'}}</button>
@@ -38,10 +38,10 @@
                 <div class="cont_categoria" v-for="(condiciones, index) in condiciones_cat3" :key="condiciones.id">
                     <p class="titulo_cont_categoria">{{ condiciones.titulo }}</p>
                             <ul class="enfermedades_por_categoria" v-if="condiciones.listaReducida">
-                                    <li v-for="condicion in condiciones.condicion.slice(0,5)"><span><i class="remixicon-check-fill"></i></span> {{ condicion.title }}</li>
+                                    <li v-for="condicion in condiciones.condicion.slice(0,5)"><span><i class="remixicon-checkbox-blank-circle-fill"></i></span> {{ condicion.title }}</li>
                             </ul>
                             <ul class="enfermedades_por_categoria" v-else>
-                                    <li v-for="condicionlista in condiciones.condicion"><span><i class="remixicon-check-fill"></i></span> {{ condicionlista.title }}</li>
+                                    <li v-for="condicionlista in condiciones.condicion"><span><i class="remixicon-checkbox-blank-circle"></i></span> {{ condicionlista.title }}</li>
                             </ul>
                     <div class="row-btn">
                         <button v-show="condiciones.listaReducida" class="btnexpandir" @click="cambioEstado(condiciones.id,condiciones_cat3)">{{(condiciones.condicion.length-5 >= 1)? condiciones.condicion.length-5+" condiciones mas":'No hay mas condiciones'}}</button>
@@ -58,10 +58,10 @@
                             <div class="cont_categoria" v-for="(condiciones, index) in condiciones_cat4" :key="condiciones.id">
                                 <p class="titulo_cont_categoria">{{ condiciones.titulo }}</p>
                                         <ul class="enfermedades_por_categoria" v-if="condiciones.listaReducida">
-                                                <li v-for="condicion in condiciones.condicion.slice(0,5)"><span><i class="remixicon-check-fill"></i></span> {{ condicion.title }}</li>
+                                                <li v-for="condicion in condiciones.condicion.slice(0,5)"><span><i class="remixicon-checkbox-blank-circle-fill"></i></span> {{ condicion.title }}</li>
                                         </ul>
                                         <ul class="enfermedades_por_categoria" v-else>
-                                                <li v-for="condicionlista in condiciones.condicion"><span><i class="remixicon-check-fill"></i></span> {{ condicionlista.title }}</li>
+                                                <li v-for="condicionlista in condiciones.condicion"><span><i class="remixicon-checkbox-blank-circle-fill"></i></span> {{ condicionlista.title }}</li>
                                         </ul>
                                 <div class="row-btn">
                                     <button v-show="condiciones.listaReducida" class="btnexpandir" @click="cambioEstado(condiciones.id,condiciones_cat4)">{{(condiciones.condicion.length-5 >= 1)? condiciones.condicion.length-5+" condiciones mas":'No hay mas condiciones'}}</button>

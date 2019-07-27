@@ -17,47 +17,14 @@
         
         <main>
             <ul class="lista_enfermedades" v-for="condiciones in condiciones_cat3.slice(0,1)">
-                <li v-for="condicion in condiciones.condicion">{{ condicion.title }}</li>
+                <li v-for="condicion in condiciones.condicion"><i class="remixicon-checkbox-blank-circle-fill"></i>{{ condicion.title }}</li>
             </ul>
 
-
-            <div class="protocolos_fase">
-                <div class="titulo_fase">
-                    <h1>FASE #1</h1>
-                    <span>Duración 180 días</span>
-                    <button><i class="remixicon-question-line"></i></button>
-                </div>
-                <div class="productos_protocolo">
-                    <div class="image_producto_protocolo">
-                        <img src="assets/img/botellas.jpg" alt="">
-                    </div>
-                    <div class="descripcion_producto_protocolo">
-                        <p class="nombre_producto_protocolo">Immune BioGreenCell</p>
-                        <p class="dosis_producto_protocolo">Dosís del producto</p>
-                        <p class="precio_producto_protocolo"><span>$</span>560.95</p>
-                    </div>
-                </div>
-
-                <div class="productos_protocolo">
-                        <div class="image_producto_protocolo">
-                            <img src="assets/img/botellas.jpg" alt="">
-                        </div>
-                        <div class="descripcion_producto_protocolo">
-                            <p class="nombre_producto_protocolo">Acido Ascorbico</p>
-                            <p class="dosis_producto_protocolo">Dosís del producto probando dos filas del elemento</p>
-                            <p class="precio_producto_protocolo"><span>$</span>560.95</p>
-                        </div>
-                </div>
-
-                <a class="btn_comprar_protocolo" href="#">comprar ahora<i class="remixicon-shopping-cart-line"></i></a>
-            </div>
-
-
-
-            <div class="protocolos_fase">
+            <div class="cont_fase">
+                <div class="protocolos_fase">
                     <div class="titulo_fase">
-                        <h1>FASE #2</h1>
-                        <span>Duración 180 días</span>
+                        <h1>{{this.fases[0].titulo}}</h1>
+                        <span>- Duración del protocolo {{this.fases[0].duracion}}</span>
                         <button><i class="remixicon-question-line"></i></button>
                     </div>
                     <div class="productos_protocolo">
@@ -65,9 +32,9 @@
                             <img src="assets/img/botellas.jpg" alt="">
                         </div>
                         <div class="descripcion_producto_protocolo">
-                            <p class="nombre_producto_protocolo">Immune BioGreenCell</p>
-                            <p class="dosis_producto_protocolo">Dosís del producto</p>
-                            <p class="precio_producto_protocolo"><span>$</span>560.95</p>
+                            <p class="nombre_producto_protocolo">{{this.fases[0].producto1}}</p>
+                            <p class="precio_producto_protocolo"><span>$</span>{{this.fases[0].preciop1}}</p>
+                            <p class="dosis_producto_protocolo">{{this.fases[0].dosisp1}}</p>                        
                         </div>
                     </div>
     
@@ -76,21 +43,66 @@
                                 <img src="assets/img/botellas.jpg" alt="">
                             </div>
                             <div class="descripcion_producto_protocolo">
-                                <p class="nombre_producto_protocolo">Acido Ascorbico</p>
-                                <p class="dosis_producto_protocolo">Dosís del producto probando dos filas del elemento</p>
-                                <p class="precio_producto_protocolo"><span>$</span>560.95</p>
+                                <p class="nombre_producto_protocolo">{{this.fases[0].producto2}}</p>
+                                <p class="precio_producto_protocolo"><span>$</span>{{this.fases[0].preciop2}}</p>
+                                <p class="dosis_producto_protocolo">{{this.fases[0].dosisp2}}</p>
                             </div>
+                    </div>
+    
+                    <div class="cont_total">
+                        <span class="descrip_total">Total</span>
+                        <span class="precio_total">$ {{this.mostrarTotal([this.fases[0].preciop2, this.fases[0].preciop1])}}</span>
                     </div>
     
                     <a class="btn_comprar_protocolo" href="#">Comprar ahora<i class="remixicon-shopping-cart-line"></i></a>
                 </div>
 
+                
+
+
+                <div class="protocolos_fase">
+                    <div class="titulo_fase">
+                        <h1>{{this.fases[1].titulo}}</h1>
+                        <span>- Duración del protocolo {{this.fases[1].duracion}}</span>
+                        <button><i class="remixicon-question-line"></i></button>
+                    </div>
+                    <div class="productos_protocolo">
+                        <div class="image_producto_protocolo">
+                            <img src="assets/img/botellas.jpg" alt="">
+                        </div>
+                        <div class="descripcion_producto_protocolo">
+                            <p class="nombre_producto_protocolo">{{this.fases[1].producto1}}</p>
+                            <p class="precio_producto_protocolo"><span>$</span>{{this.fases[1].preciop1}}</p>
+                            <p class="dosis_producto_protocolo">{{this.fases[1].dosisp1}}</p>                        
+                        </div>
+                    </div>
+    
+                    <div class="productos_protocolo">
+                            <div class="image_producto_protocolo">
+                                <img src="assets/img/botellas.jpg" alt="">
+                            </div>
+                            <div class="descripcion_producto_protocolo">
+                                <p class="nombre_producto_protocolo">{{this.fases[1].producto2}}</p>
+                                <p class="precio_producto_protocolo"><span>$</span>{{this.fases[1].preciop2}}</p>
+                                <p class="dosis_producto_protocolo">{{this.fases[1].dosisp2}}</p>
+                            </div>
+                    </div>
+    
+                    <div class="cont_total">
+                        <span class="descrip_total">Total</span>
+                        <span class="precio_total">$ {{this.mostrarTotal([this.fases[1].preciop2, this.fases[1].preciop1])}}</span>
+                    </div>
+    
+                    <a class="btn_comprar_protocolo" href="#">Comprar ahora<i class="remixicon-shopping-cart-line"></i></a>
+                </div>
+    
+            </div>
 
         </main>   
     </div>
 
 
-    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
     <script src="assets/js/module_conditions.js"></script>
 </body>
 </html>

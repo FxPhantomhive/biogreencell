@@ -260,11 +260,11 @@ const vm = new Vue({
                 producto1: 'Immune Bio Green Cell', 
                 dosisp1: '20 ml. 4 veces al día', 
                 numbotellasmesp1: '10 Botellas', 
-                precop1: '560.95',
+                preciop1: 560.95,
                 producto2: 'Ascorbic Acid', 
                 dosisp2: 'Un scoop 2 veces al día, mezclado con jugo de frutas o agua', 
                 numbotellasmesp2:'1 botella', 
-                preciop2: '54.95'
+                preciop2: 54.95
             },
             {   
                 id: 2, 
@@ -274,11 +274,11 @@ const vm = new Vue({
                 producto1: 'Immune Bio Green Cell', 
                 dosisp1: '10 ml. 2 veces al día', 
                 numbotellasmesp1: '3 Botellas', 
-                precop1: '249.95',
+                preciop1: 249.95,
                 producto2: 'Ascorbic Acid', 
                 dosisp2: 'Un scoop 2 veces al día, mezclado con jugo de frutas o agua', 
                 numbotellasmesp2:'1 botella', 
-                preciop2: '54.95'
+                preciop2: 54.95
             },
              //*****************************************************************************
             {
@@ -289,11 +289,11 @@ const vm = new Vue({
                 producto1: 'Immune Bio Green Cell', 
                 dosisp1: '40 ml. 4 veces al día', 
                 numbotellasmesp1: '20 Botellas', 
-                precop1: '1,120.00',
+                preciop1: 1120.00,
                 producto2: 'Ascorbic Acid', 
                 dosisp2: 'Un scoop cuatro veces al día, mezclado con jugo de frutas o agua', 
                 numbotellasmesp2:'1 botella', 
-                preciop2: '54.95'
+                preciop2: 54.95
             },
             {   
                 id: 4, 
@@ -303,11 +303,11 @@ const vm = new Vue({
                 producto1: 'Immune Bio Green Cell', 
                 dosisp1: '20 ml. 2 veces al día', 
                 numbotellasmesp1: '5 Botellas', 
-                precop1: '359.95',
+                preciop1: 359.95,
                 producto2: 'Ascorbic Acid', 
                 dosisp2: 'Un scoop cuatro veces al día, mezclado con jugo de frutas o agua', 
                 numbotellasmesp2:'1 botella', 
-                preciop2: '54.95'
+                preciop2: 54.95
             },
              //*****************************************************************************
             {
@@ -318,11 +318,11 @@ const vm = new Vue({
                 producto1: 'Immune Bio Green Cell', 
                 dosisp1: '32 ml. 4 veces al día', 
                 numbotellasmesp1: '16 Botellas', 
-                precop1: '869.95',
+                preciop1: 869.95,
                 producto2: 'Ascorbic Acid', 
                 dosisp2: 'Un scoop dos veces al día, mezclado con jugo de frutas o agua', 
                 numbotellasmesp2:'1 botella', 
-                preciop2: '54.95'
+                preciop2: 54.95
             },
             {   
                 id: 6, 
@@ -332,11 +332,11 @@ const vm = new Vue({
                 producto1: 'Immune Bio Green Cell', 
                 dosisp1: '20 ml. 2 veces al día', 
                 numbotellasmesp1: '5 Botellas', 
-                precop1: '359.95',
+                preciop1: 359.95,
                 producto2: 'Ascorbic Acid', 
                 dosisp2: 'Un scoop dos veces al día, mezclado con jugo de frutas o agua', 
                 numbotellasmesp2:'1 botella', 
-                preciop2: '54.95'
+                preciop2: 54.95
             },
              //*****************************************************************************
             {
@@ -347,11 +347,11 @@ const vm = new Vue({
                 producto1: 'Immune Bio Green Cell', 
                 dosisp1: '32 ml. 4 veces al día', 
                 numbotellasmesp1: '16 Botellas', 
-                precop1: '869.95',
+                preciop1: 869.95,
                 producto2: 'Ascorbic Acid', 
                 dosisp2: 'Un scoop dos veces al día, mezclado con jugo de frutas o agua', 
                 numbotellasmesp2:'1 botella', 
-                preciop2: '54.95',
+                preciop2: 54.95,
                 producto3: 'WOUND FIXER', 
                 dosisp3: 'Aplicar sobre la zona afectada de 2 a 3 veces x dia', 
                 numbotellasmesp3:'1 botella', 
@@ -365,7 +365,7 @@ const vm = new Vue({
                 producto1: 'Immune Bio Green Cell', 
                 dosisp1: '20 ml. 2 veces al día', 
                 numbotellasmesp1: '5 Botellas', 
-                precop1: '359.95',
+                preciop1: 359.95,
                 producto2: 'Ascorbic Acid', 
                 dosisp2: 'Un scoop dos veces al día, mezclado con jugo de frutas o agua', 
                 numbotellasmesp2:'1 botella', 
@@ -373,7 +373,7 @@ const vm = new Vue({
                 producto3: 'WOUND FIXER', 
                 dosisp3: 'Aplicar sobre la zona afectada de 2 a 3 veces x dia', 
                 numbotellasmesp3:'1 botella', 
-                preciop2: '44.95'
+                preciop2: 44.95
             },
              //*****************************************************************************
             {
@@ -384,11 +384,11 @@ const vm = new Vue({
                 producto1: 'Immune Bio Green Cell', 
                 dosisp1: '40 ml. 4 veces al día', 
                 numbotellasmesp1: '20 Botellas', 
-                precop1: '1,120.00',
+                preciop1: 1120.00,
                 producto2: 'Ascorbic Acid', 
                 dosisp2: 'Un scoop cuatro veces al día, mezclado con jugo de frutas o agua', 
                 numbotellasmesp2:'1 botella', 
-                preciop2: '54.95'
+                preciop2: 54.95
             },
             {   
                 id: 10, 
@@ -398,11 +398,11 @@ const vm = new Vue({
                 producto1: 'Immune Bio Green Cell', 
                 dosisp1: '20 ml. 2 veces al día', 
                 numbotellasmesp1: '5 Botellas', 
-                precop1: '359.95',
+                preciop1: 359.95,
                 producto2: 'Ascorbic Acid', 
                 dosisp2: 'Un scoop cuatro veces al día, mezclado con jugo de frutas o agua', 
                 numbotellasmesp2:'1 botella', 
-                preciop2: '54.95'
+                preciop2: 54.95
             },
              //*****************************************************************************
             {
@@ -413,7 +413,7 @@ const vm = new Vue({
                 producto1: 'Immune Bio Green Cell', 
                 dosisp1: '40 ml. 4 veces al día', 
                 numbotellasmesp1: '20 Botellas', 
-                precop1: '1,120.00',
+                preciop1: 1120.00,
                 producto2: 'Ascorbic Acid', 
                 dosisp2: 'Un scoop cuatro veces al día, mezclado con jugo de frutas o agua', 
                 numbotellasmesp2:'1 botella', 
@@ -431,11 +431,11 @@ const vm = new Vue({
                 producto1: 'Immune Bio Green Cell', 
                 dosisp1: '20 ml. 2 veces al día', 
                 numbotellasmesp1: '5 Botellas', 
-                precop1: '359.95',
+                preciop1: 359.95,
                 producto2: 'Ascorbic Acid', 
                 dosisp2: 'Un scoop cuatro veces al día, mezclado con jugo de frutas o agua', 
                 numbotellasmesp2:'1 botella', 
-                preciop2: '54.95'
+                preciop2: 54.95
             },
             //*****************************************************************************
             {
@@ -446,7 +446,7 @@ const vm = new Vue({
                 producto1: 'Immune Bio Green Cell', 
                 dosisp1: '20 ml. 4 veces al día', 
                 numbotellasmesp1: '10 Botellas', 
-                precop1: '560.95'                
+                preciop1: 560.95                
             },
             {   
                 id: 14, 
@@ -456,7 +456,7 @@ const vm = new Vue({
                 producto1: 'Immune Bio Green Cell', 
                 dosisp1: '10 ml. 2 veces al día', 
                 numbotellasmesp1: '3 Botellas', 
-                precop1: '249.95'                
+                preciop1: 249.95                
             },
             //*****************************************************************************
             {
@@ -467,7 +467,7 @@ const vm = new Vue({
                 producto1: 'Immune Bio Green Cell', 
                 dosisp1: '40 ml. 4 veces al día', 
                 numbotellasmesp1: '20 Botellas', 
-                precop1: '1,120.00'                
+                preciop1: 1120.00                
             },
             {   
                 id: 16, 
@@ -477,7 +477,7 @@ const vm = new Vue({
                 producto1: 'Immune Bio Green Cell', 
                 dosisp1: '20 ml. 2 veces al día', 
                 numbotellasmesp1: '5 Botellas', 
-                precop1: '359.95'                
+                preciop1: 359.95                
             },
              //*****************************************************************************
              {
@@ -488,11 +488,11 @@ const vm = new Vue({
                 producto1: 'Immune Bio Green Cell', 
                 dosisp1: '20 ml. 4 veces al día', 
                 numbotellasmesp1: '10 Botellas', 
-                precop1: '560.95',
+                preciop1: 560.95,
                 producto2: 'Ascorbic Acid', 
                 dosisp2: 'Un scoop dos veces al día, mezclado con jugo de frutas o agua', 
                 numbotellasmesp2:'1 botella', 
-                preciop2: '54.95'
+                preciop2: 54.95
             },
             {   
                 id: 18, 
@@ -502,11 +502,11 @@ const vm = new Vue({
                 producto1: 'Immune Bio Green Cell', 
                 dosisp1: '10 ml. 2 veces al día', 
                 numbotellasmesp1: '3 Botellas', 
-                precop1: '249.95',
+                preciop1: 249.95,
                 producto2: 'Ascorbic Acid', 
                 dosisp2: 'Un scoop dos veces al día, mezclado con jugo de frutas o agua', 
                 numbotellasmesp2:'1 botella', 
-                preciop2: '54.95'
+                preciop2: 54.95
             },
             //*****************************************************************************
             {
@@ -517,7 +517,7 @@ const vm = new Vue({
                 producto1: 'Immune Bio Green Cell', 
                 dosisp1: '32 ml. 4 veces al día', 
                 numbotellasmesp1: '16 Botellas', 
-                precop1: '869.95'                
+                preciop1: 869.95                
             },
             {   
                 id: 20, 
@@ -527,7 +527,7 @@ const vm = new Vue({
                 producto1: 'Immune Bio Green Cell', 
                 dosisp1: '10 ml. 2 veces al día', 
                 numbotellasmesp1: '3 Botellas', 
-                precop1: '249.95'                
+                preciop1: 249.95                
             },
              //*****************************************************************************
              {
@@ -538,11 +538,11 @@ const vm = new Vue({
                 producto1: 'Immune Bio Green Cell', 
                 dosisp1: '40 ml. 4 veces al día', 
                 numbotellasmesp1: '20 Botellas', 
-                precop1: '1,120.00',
+                preciop1: 1120.00,
                 producto2: 'Ascorbic Acid', 
                 dosisp2: 'Un scoop tres veces al día, mezclado con jugo de frutas o agua', 
                 numbotellasmesp2:'1 botella', 
-                preciop2: '54.95'
+                preciop2: 54.95
             },
             {   
                 id: 22, 
@@ -552,11 +552,11 @@ const vm = new Vue({
                 producto1: 'Immune Bio Green Cell', 
                 dosisp1: '10 ml. 2 veces al día', 
                 numbotellasmesp1: '3 Botellas', 
-                precop1: '249.95',
+                preciop1: 249.95,
                 producto2: 'Ascorbic Acid', 
                 dosisp2: 'Un scoop dos veces al día, mezclado con jugo de frutas o agua', 
                 numbotellasmesp2:'1 botella', 
-                preciop2: '54.95'
+                preciop2: 54.95
             },
             //*****************************************************************************
             {
@@ -567,11 +567,11 @@ const vm = new Vue({
                 producto1: 'Immune Bio Green Cell', 
                 dosisp1: '40 ml. 4 veces al día', 
                 numbotellasmesp1: '20 Botellas', 
-                precop1: '1,120.00',
+                preciop1: 1120.00,
                 producto2: 'Ascorbic Acid', 
                 dosisp2: 'Un scoop tres veces al día, mezclado con jugo de frutas o agua', 
                 numbotellasmesp2:'1 botella', 
-                preciop2: '54.95'
+                preciop2: 54.95
             },
             {   
                 id: 24, 
@@ -581,11 +581,11 @@ const vm = new Vue({
                 producto1: 'Immune Bio Green Cell', 
                 dosisp1: '10 ml. 2 veces al día', 
                 numbotellasmesp1: '3 Botellas', 
-                precop1: '249.95',
+                preciop1: 249.95,
                 producto2: 'Ascorbic Acid', 
                 dosisp2: 'Un scoop dos veces al día, mezclado con jugo de frutas o agua', 
                 numbotellasmesp2:'1 botella', 
-                preciop2: '54.95'
+                preciop2: 54.95
             },
              //*****************************************************************************
              {
@@ -596,7 +596,7 @@ const vm = new Vue({
                 producto1: 'Immune Bio Green Cell', 
                 dosisp1: '20 ml. 4 veces al día', 
                 numbotellasmesp1: '10 Botellas', 
-                precop1: '560.95',
+                preciop1: 560.95,
                 producto2: 'Ascorbic Acid', 
                 dosisp2: 'Un scoop dos veces al día, mezclado con jugo de frutas o agua', 
                 numbotellasmesp2:'1 botella', 
@@ -604,7 +604,7 @@ const vm = new Vue({
                 producto3: 'WOUND FIXER', 
                 dosisp3: 'Aplicar sobre la zona afectada de 2 a 3 veces x dia', 
                 numbotellasmesp3:'1 botella', 
-                preciop2: '44.95'
+                preciop2: 44.95
             },
             {   
                 id: 26, 
@@ -614,15 +614,15 @@ const vm = new Vue({
                 producto1: 'Immune Bio Green Cell', 
                 dosisp1: '10 ml. 2 veces al día', 
                 numbotellasmesp1: '3 Botellas', 
-                precop1: '249.95',
+                preciop1: 249.95,
                 producto2: 'Ascorbic Acid', 
                 dosisp2: 'Un scoop dos veces al día, mezclado con jugo de frutas o agua', 
                 numbotellasmesp2:'1 botella', 
-                preciop2: '54.95',
+                preciop2: 54.95,
                 producto3: 'WOUND FIXER', 
                 dosisp3: 'Aplicar sobre la zona afectada de 2 a 3 veces x dia', 
                 numbotellasmesp3:'1 botella', 
-                preciop2: '44.95'
+                preciop3: 44.95
             },
             //*****************************************************************************
             {
@@ -633,11 +633,11 @@ const vm = new Vue({
                 producto1: 'Immune Bio Green Cell', 
                 dosisp1: '32 ml. 4 veces al día', 
                 numbotellasmesp1: '16 Botellas', 
-                precop1: '869.95',
+                preciop1: 869.95,
                 producto2: 'Ascorbic Acid', 
                 dosisp2: 'Un scoop dos veces al día, mezclado con jugo de frutas o agua', 
                 numbotellasmesp2:'1 botella', 
-                preciop2: '54.95'
+                preciop2: 54.95
             },
             {   
                 id: 28, 
@@ -647,11 +647,11 @@ const vm = new Vue({
                 producto1: 'Immune Bio Green Cell', 
                 dosisp1: '10 ml. 2 veces al día', 
                 numbotellasmesp1: '3 Botellas', 
-                precop1: '249.95',
+                preciop1: 249.95,
                 producto2: 'Ascorbic Acid', 
                 dosisp2: 'Un scoop dos veces al día, mezclado con jugo de frutas o agua', 
                 numbotellasmesp2:'1 botella', 
-                preciop2: '54.95'
+                preciop2: 54.95
             },
              //*****************************************************************************
              {
@@ -662,11 +662,11 @@ const vm = new Vue({
                 producto1: 'Immune Bio Green Cell', 
                 dosisp1: '20 ml. 4 veces al día', 
                 numbotellasmesp1: '10 Botellas', 
-                precop1: '560.95',
+                preciop1: 560.95,
                 producto2: 'Ascorbic Acid', 
                 dosisp2: 'Un scoop dos veces al día, mezclado con jugo de frutas o agua', 
                 numbotellasmesp2:'1 botella', 
-                preciop2: '54.95'
+                preciop2: 54.95
             },
             {   
                 id: 30, 
@@ -676,11 +676,11 @@ const vm = new Vue({
                 producto1: 'Immune Bio Green Cell', 
                 dosisp1: '10 ml. 2 veces al día', 
                 numbotellasmesp1: '3 Botellas', 
-                precop1: '249.95',
+                preciop1: 249.95,
                 producto2: 'Ascorbic Acid', 
                 dosisp2: 'Un scoop dos veces al día, mezclado con jugo de frutas o agua', 
                 numbotellasmesp2:'1 botella', 
-                preciop2: '54.95'
+                preciop2: 54.95
             },
              //*****************************************************************************
              {
@@ -691,11 +691,11 @@ const vm = new Vue({
                 producto1: 'Immune Bio Green Cell', 
                 dosisp1: '40 ml. 4 veces al día', 
                 numbotellasmesp1: '20 Botellas', 
-                precop1: '51,120.00',
+                preciop1: 51120.00,
                 producto2: 'Ascorbic Acid', 
                 dosisp2: 'Un scoop dos veces al día, mezclado con jugo de frutas o agua', 
                 numbotellasmesp2:'1 botella', 
-                preciop2: '54.95'
+                preciop2: 54.95
             },
             {   
                 id: 32, 
@@ -705,17 +705,21 @@ const vm = new Vue({
                 producto1: 'Immune Bio Green Cell', 
                 dosisp1: '10 ml. 2 veces al día', 
                 numbotellasmesp1: '3 Botellas', 
-                precop1: '249.95',
+                preciop1: 249.95,
                 producto2: 'Ascorbic Acid', 
                 dosisp2: 'Un scoop dos veces al día, mezclado con jugo de frutas o agua', 
                 numbotellasmesp2:'1 botella', 
                 preciop2: '54.95'
             },
 
-        ]
+        ],
+
+        total: [],
 
     },
     methods: {
+
+        /*Funcion para saber si la lista esta expandida o no*/
         cambioEstado(id,cate){
             let id2 = id-1;
             let listaCat = cate[id2];
@@ -736,10 +740,22 @@ const vm = new Vue({
             }
         },
 
+        /*Funcion contar condiciones */
         contarCondiciones(id, cate){
             let id2 = id-1;
             let nCat = cate[id2].condicion.length;
             return nCat;
+        },
+
+        /*Funcion para total */
+        mostrarTotal(arrayPrecio){
+            let precioFinal = 0;
+            let temp = 0;
+            for(let i=0; i < arrayPrecio.length; i++){
+                temp = parseFloat(arrayPrecio[i]);
+                precioFinal += temp;
+            }
+            return precioFinal.toFixed(2);
         }
     },
 });
