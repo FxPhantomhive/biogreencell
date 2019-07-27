@@ -417,11 +417,11 @@ const vm = new Vue({
                 producto2: 'Ascorbic Acid', 
                 dosisp2: 'Un scoop cuatro veces al día, mezclado con jugo de frutas o agua', 
                 numbotellasmesp2:'1 botella', 
-                preciop2: '54.95',
+                preciop2: 54.95,
                 producto3: 'WOUND FIXER', 
                 dosisp3: 'Aplicar sobre la zona afectada de 2 a 3 veces x dia', 
                 numbotellasmesp3:'1 botella', 
-                preciop2: '44.95'
+                preciop2: 44.95
             },
             {   
                 id: 12, 
