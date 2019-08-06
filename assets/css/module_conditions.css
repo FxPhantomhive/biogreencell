@@ -16,20 +16,39 @@ body{
     background: #f0f2f5;
     padding: 0 50px;
 }
+.after_titulo{
+    font-size:1.2em;
+    font-weight: 700;
+    color: #6f6f72;
+    position: relative;
+    line-height: 30px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+}
 .titulo_protocolo{
     width: 100%;
-    margin-top: 50px;
-    font-size: 1.5em;
+    font-size: 1.3em;
     text-align: center;
     font-weight: 900;
     line-height: 30px;
     margin-bottom:5px;
     text-transform: uppercase;
+    position: relative;
 }
 .titulo_protocolo span{
     font-size: 0.8em;
     color: #7cb342;
     font-weight: 900;
+}.titulo_protocolo:after{
+    content:'';
+    position: absolute;
+    width: 250px;
+    height: 2px;
+    border-radius: 10px;
+    top: 115%;
+    left: calc(50% - 125px);
+    border-bottom:2px solid #7cb342;
 }
 .descripcion_protocolo{
     font-size:0.9em;
@@ -37,22 +56,14 @@ body{
     color: #5f5f62;
     position: relative;
     line-height: 30px;
+    margin-top: 40px;
     width: 100%;
     text-align: center;
-}.descripcion_protocolo:after{
-    content:'';
-    position: absolute;
-    width: 250px;
-    height: 2px;
-    border-radius: 10px;
-    top: 110%;
-    left: calc(50% - 125px);
-    border-bottom:2px solid #7cb342;
 }
 
 .categorias{
   	margin:0;
-    margin-top:10px;
+    margin-top:0px;
     width: 100%;
     display: flex;
     align-items: stretch;
@@ -89,7 +100,7 @@ body{
     text-align: center;
     padding: 0px 30px;
     display: flex;align-items: center;justify-content: center;
-    color: #2f2f32;
+    color: #1f1f22;
     position: relative;
     margin:0;
     transition: 0.3s ease;
@@ -115,13 +126,19 @@ body{
   	font-family:"Open Sans";
     font-weight: 400;
     color: #4f4f52;
-    line-height: 24px;
+    line-height: 15px;
     letter-spacing:1px;
     transition: 0.3s ease;
+    margin-bottom: 15px;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
 }
 .enfermedades_por_categoria li span i{
-    color:#5f5f62;
-    font-size: 0.5em;
+    color:#8f8f92;
+    font-size: 0.4em;
+    margin-right: 5px;
 }
 
 .row-btn{
@@ -241,8 +258,7 @@ body{
     flex-wrap: wrap;
     list-style: none;
     margin: 0 auto;
-    padding: 20px 50px;
-    margin-top: 25px;
+    padding: 10px 50px;
 }
 .lista_enfermedades li{
     font-size: 0.9em;
@@ -291,10 +307,11 @@ body{
     margin-bottom: 10px;
 }
 .protocolos_fase .titulo_fase h1{
-    font-size: 1.2em;
+    font-size: 1.3em;
     color: #000;
     font-weight: 900;
     margin-right: 10px;
+    text-transform: uppercase;
 }
 .protocolos_fase .titulo_fase span{
     font-size: 0.9em;
@@ -313,7 +330,7 @@ body{
     transition: 0.3s ease;
 }.protocolos_fase .titulo_fase button i{
     font-size: 1.5em !important;
-}
+}   
 .protocolos_fase .titulo_fase button:hover{
     color: #000;
 }
@@ -366,7 +383,13 @@ body{
     font-family:'Open Sans';
     color: #5f5f62;
     line-height: 1.3em;
-    width: 75%;
+    width: 85%;
+}
+.productos_protocolo .descripcion_producto_protocolo .botellas_producto_protocolo{
+    width: 100%;
+    color: #000;
+    font-weight: 700;
+    font-size: 0.8em;
 }
 .productos_protocolo .descripcion_producto_protocolo .precio_producto_protocolo{
     font-weight: 700;
@@ -387,9 +410,20 @@ body{
     box-sizing: border-box;
     padding: 10px 30px;
     margin-bottom: 20px;
+    margin-top: 10px;
     display: flex;
     align-items: center;
     justify-content: flex-end;
+    position: relative;
+}
+.cont_total:after{
+    width: 35%;
+    content: "";
+    top: 0;
+    left: 60%;
+    height: 1px;
+    background: #cfcfd2;
+    position: absolute;
 }
 .cont_total .descrip_total{
     font-size: 0.9em;

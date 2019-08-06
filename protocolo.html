@@ -12,11 +12,12 @@
 </head>
 <body>
     <div class="protocolo_product_ats">
-        <h1 class="titulo_protocolo">Condiciones progresivas del sistema digestipo etapas 1 y 2 <br> <span>Categoría 3</span></h1>
-        <h4 class="descripcion_protocolo">Condiciones relacionadas a este protocolo</h4>
+        <h4 class="after_titulo">Protocolo sugerido para su condición</h4>
+        <h1 class="titulo_protocolo">Protocolo integrativo de alta complejidad<br> <span>Categoría 3</span></h1>
+        <h4 class="descripcion_protocolo">Condiciones progresivas del sistema digestivo etapas 1 y 2</h4>
         
         <main>
-            <ul class="lista_enfermedades" v-for="condiciones in condiciones_cat3.slice(0,1)">
+            <ul class="lista_enfermedades" v-for="condiciones in condiciones_cat.slice(0,1)">
                 <li v-for="condicion in condiciones.condicion"><i class="remixicon-checkbox-blank-circle-fill"></i>{{ condicion.title }}</li>
             </ul>
 
@@ -34,18 +35,20 @@
                         <div class="descripcion_producto_protocolo">
                             <p class="nombre_producto_protocolo">{{this.fases[0].producto1}}</p>
                             <p class="precio_producto_protocolo"><span>$</span>{{this.fases[0].preciop1}}</p>
-                            <p class="dosis_producto_protocolo">{{this.fases[0].dosisp1}}</p>                        
+                            <p class="dosis_producto_protocolo">Dosis: {{this.fases[0].dosisp1}}</p>  
+                            <p class="botellas_producto_protocolo">{{ this.fases[0].numbotellasmesp1}}</p>                      
                         </div>
                     </div>
     
                     <div class="productos_protocolo">
                             <div class="image_producto_protocolo">
-                                <img src="assets/img/botellas.jpg" alt="">
+                                <img src="assets/img/acido.jpg" alt="">
                             </div>
                             <div class="descripcion_producto_protocolo">
                                 <p class="nombre_producto_protocolo">{{this.fases[0].producto2}}</p>
                                 <p class="precio_producto_protocolo"><span>$</span>{{this.fases[0].preciop2}}</p>
-                                <p class="dosis_producto_protocolo">{{this.fases[0].dosisp2}}</p>
+                                <p class="dosis_producto_protocolo">Dosis: {{this.fases[0].dosisp2}}</p>
+                                <p class="botellas_producto_protocolo">{{ this.fases[0].numbotellasmesp2}}</p>
                             </div>
                     </div>
     
@@ -54,7 +57,7 @@
                         <span class="precio_total">$ {{this.mostrarTotal([this.fases[0].preciop2, this.fases[0].preciop1])}}</span>
                     </div>
     
-                    <a class="btn_comprar_protocolo" href="#">Comprar ahora<i class="remixicon-shopping-cart-line"></i></a>
+                    <a class="btn_comprar_protocolo" href="https://biogreencell.com/product/condiciones-progresivas-del-sistema-digestivo-etapas-1-y-2-fase1">Comprar ahora<i class="remixicon-shopping-cart-line"></i></a>
                 </div>
 
                 
@@ -73,18 +76,20 @@
                         <div class="descripcion_producto_protocolo">
                             <p class="nombre_producto_protocolo">{{this.fases[1].producto1}}</p>
                             <p class="precio_producto_protocolo"><span>$</span>{{this.fases[1].preciop1}}</p>
-                            <p class="dosis_producto_protocolo">{{this.fases[1].dosisp1}}</p>                        
+                            <p class="dosis_producto_protocolo">Dosis: {{this.fases[1].dosisp1}}</p>
+                            <p class="botellas_producto_protocolo">{{ this.fases[1].numbotellasmesp1}}</p>                        
                         </div>
                     </div>
     
                     <div class="productos_protocolo">
                             <div class="image_producto_protocolo">
-                                <img src="assets/img/botellas.jpg" alt="">
+                                <img src="assets/img/acido.jpg" alt="">
                             </div>
                             <div class="descripcion_producto_protocolo">
                                 <p class="nombre_producto_protocolo">{{this.fases[1].producto2}}</p>
                                 <p class="precio_producto_protocolo"><span>$</span>{{this.fases[1].preciop2}}</p>
-                                <p class="dosis_producto_protocolo">{{this.fases[1].dosisp2}}</p>
+                                <p class="dosis_producto_protocolo">Dosis: {{this.fases[1].dosisp2}}</p>
+                                <p class="botellas_producto_protocolo">{{ this.fases[1].numbotellasmesp2}}</p>
                             </div>
                     </div>
     
@@ -93,16 +98,16 @@
                         <span class="precio_total">$ {{this.mostrarTotal([this.fases[1].preciop2, this.fases[1].preciop1])}}</span>
                     </div>
     
-                    <a class="btn_comprar_protocolo" href="#">Comprar ahora<i class="remixicon-shopping-cart-line"></i></a>
+                    <a class="btn_comprar_protocolo" href="https://biogreencell.com/product/condiciones-progresivas-del-sistema-digestivo-etapas-1-y-2-fase2">Comprar ahora<i class="remixicon-shopping-cart-line"></i></a>
                 </div>
     
             </div>
-
         </main>   
     </div>
 
 
-    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
+    <script src="https://unpkg.com/vue-router@3.0.7/dist/vue-router.js"></script>
     <script src="assets/js/module_conditions.js"></script>
 </body>
 </html>
