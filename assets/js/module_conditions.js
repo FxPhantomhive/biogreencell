@@ -25,7 +25,7 @@ const vm = new Vue({
     data:{
         //condiciones categoria
         condiciones_cat: [
-            {id:1, listaReducida:true, btnExpandir: 'Ver menos', num:'2', categoria: 'categoria 2', titulo: 'CONDICIONES AUTOINMUNES EN ETAPA INICIAL (UN AÑO O MENOS CON LA CONDICION)', 
+            {id:1, listaReducida:true, btnExpandir: 'Ver menos', num:'2', relacional: 1,categoria: 'categoria 2', titulo: 'CONDICIONES AUTOINMUNES EN ETAPA INICIAL (UN AÑO O MENOS CON LA CONDICION)', 
                 condicion: [
                     {n: '35', title: 'Esclerosis multiple. Etapa inicial (1 año o menos)'},
                     {n: '36', title: 'Sclerodemas. Etapa inicial (1 año o menos)'},
@@ -281,7 +281,8 @@ const vm = new Vue({
                 producto2: 'Ascorbic Acid', 
                 dosisp2: 'Un scoop 2 veces al día, mezclado con jugo de frutas o agua', 
                 numbotellasmesp2:'1 botella', 
-                preciop2: 54.95
+                preciop2: 54.95,
+                urlrel: 'https://biogreencell.com/product/condiciones-progresivas-del-sistema-digestivo-etapas-1-y-2-fase1'
             },
             {   
                 id: 2, 
@@ -295,7 +296,8 @@ const vm = new Vue({
                 producto2: 'Ascorbic Acid', 
                 dosisp2: 'Un scoop 2 veces al día, mezclado con jugo de frutas o agua', 
                 numbotellasmesp2:'1 botella', 
-                preciop2: 54.95
+                preciop2: 54.95,
+                urlrel: 'https://biogreencell.com/product/condiciones-progresivas-del-sistema-digestivo-etapas-1-y-2-fase2'
             },
              //*****************************************************************************
             {
@@ -310,7 +312,8 @@ const vm = new Vue({
                 producto2: 'Ascorbic Acid', 
                 dosisp2: 'Un scoop cuatro veces al día, mezclado con jugo de frutas o agua', 
                 numbotellasmesp2:'1 botella', 
-                preciop2: 54.95
+                preciop2: 54.95,
+                urlrel: 'https://biogreencell.com/product/condiciones-progresivas-del-sistema-digestivo-etapas-3-y-4-fase1'
             },
             {   
                 id: 4, 
@@ -324,7 +327,8 @@ const vm = new Vue({
                 producto2: 'Ascorbic Acid', 
                 dosisp2: 'Un scoop cuatro veces al día, mezclado con jugo de frutas o agua', 
                 numbotellasmesp2:'1 botella', 
-                preciop2: 54.95
+                preciop2: 54.95,
+                urlrel: 'https://biogreencell.com/product/condiciones-progresivas-del-sistema-digestivo-etapas-3-y-4-fase2'
             },
              //*****************************************************************************
             {
@@ -335,11 +339,12 @@ const vm = new Vue({
                 producto1: 'Immune Bio Green Cell', 
                 dosisp1: '32 ml. 4 veces al día', 
                 numbotellasmesp1: '16 Botellas', 
-                preciop1: 869.95,
+                preciop1: 896.95,
                 producto2: 'Ascorbic Acid', 
                 dosisp2: 'Un scoop dos veces al día, mezclado con jugo de frutas o agua', 
                 numbotellasmesp2:'1 botella', 
-                preciop2: 54.95
+                preciop2: 54.95,
+                urlrel: 'https://biogreencell.com/product/condiciones-progresivas-del-sistema-inmune-etapas-1-y-2-fase1'
             },
             {   
                 id: 6, 
@@ -353,7 +358,8 @@ const vm = new Vue({
                 producto2: 'Ascorbic Acid', 
                 dosisp2: 'Un scoop dos veces al día, mezclado con jugo de frutas o agua', 
                 numbotellasmesp2:'1 botella', 
-                preciop2: 54.95
+                preciop2: 54.95,
+                urlrel: 'https://biogreencell.com/product/condiciones-progresivas-del-sistema-inmune-etapas-1-y-2-fase2'
             },
              //*****************************************************************************
             {
@@ -364,7 +370,7 @@ const vm = new Vue({
                 producto1: 'Immune Bio Green Cell', 
                 dosisp1: '32 ml. 4 veces al día', 
                 numbotellasmesp1: '16 Botellas', 
-                preciop1: 869.95,
+                preciop1: 896.95,
                 producto2: 'Ascorbic Acid', 
                 dosisp2: 'Un scoop dos veces al día, mezclado con jugo de frutas o agua', 
                 numbotellasmesp2:'1 botella', 
@@ -372,7 +378,8 @@ const vm = new Vue({
                 producto3: 'WOUND FIXER', 
                 dosisp3: 'Aplicar sobre la zona afectada de 2 a 3 veces x dia', 
                 numbotellasmesp3:'1 botella', 
-                preciop2: '44.95'
+                preciop2: '44.95',
+                urlrel: 'https://biogreencell.com/product/condiciones-progresivas-de-la-piel-etapas-1-y-2-fase1'
             },
             {   
                 id: 8, 
@@ -390,7 +397,8 @@ const vm = new Vue({
                 producto3: 'WOUND FIXER', 
                 dosisp3: 'Aplicar sobre la zona afectada de 2 a 3 veces x dia', 
                 numbotellasmesp3:'1 botella', 
-                preciop2: 44.95
+                preciop2: 44.95,
+                urlrel: 'https://biogreencell.com/product/condiciones-progresivas-de-la-piel-etapas-1-y-2-fase2'
             },
              //*****************************************************************************
             {
@@ -405,7 +413,8 @@ const vm = new Vue({
                 producto2: 'Ascorbic Acid', 
                 dosisp2: 'Un scoop cuatro veces al día, mezclado con jugo de frutas o agua', 
                 numbotellasmesp2:'1 botella', 
-                preciop2: 54.95
+                preciop2: 54.95,
+                urlrel: 'https://biogreencell.com/product/condiciones-progresivas-del-sistema-inmune-etapas-3-y-4-fase-1'
             },
             {   
                 id: 10, 
@@ -419,7 +428,8 @@ const vm = new Vue({
                 producto2: 'Ascorbic Acid', 
                 dosisp2: 'Un scoop cuatro veces al día, mezclado con jugo de frutas o agua', 
                 numbotellasmesp2:'1 botella', 
-                preciop2: 54.95
+                preciop2: 54.95,
+                urlrel: 'https://biogreencell.com/product/condiciones-progresivas-del-sistema-inmune-etapas-3-y-4-fase2'
             },
              //*****************************************************************************
             {
@@ -438,7 +448,8 @@ const vm = new Vue({
                 producto3: 'WOUND FIXER', 
                 dosisp3: 'Aplicar sobre la zona afectada de 2 a 3 veces x dia', 
                 numbotellasmesp3:'1 botella', 
-                preciop2: 44.95
+                preciop2: 44.95,
+                urlrel: 'https://biogreencell.com/product/condiciones-progresivas-de-la-piel-etapas-3-y-4-fase-1'
             },
             {   
                 id: 12, 
@@ -452,28 +463,33 @@ const vm = new Vue({
                 producto2: 'Ascorbic Acid', 
                 dosisp2: 'Un scoop cuatro veces al día, mezclado con jugo de frutas o agua', 
                 numbotellasmesp2:'1 botella', 
-                preciop2: 54.95
+                preciop2: 54.95,
+                urlrel: 'https://biogreencell.com/product/condiciones-progresivas-de-la-piel-etapas-3-y-4-fase-2'
             },
             //*****************************************************************************
             {
                 id: 13, 
+                relacional:1, /*esto es experimental, puede quitarse */
                 categoria: 'categoria 2', 
                 titulo: 'Fase 1', 
                 duracion: '180 días', 
                 producto1: 'Immune Bio Green Cell', 
                 dosisp1: '20 ml. 4 veces al día', 
                 numbotellasmesp1: '10 Botellas', 
-                preciop1: 560.95                
+                preciop1: 560.95,
+                urlrel: 'https://biogreencell.com/product/condiciones-autoinmunes-en-etapa-inicial-un-ano-o-menos-con-la-condicion-fase1'               
             },
             {   
                 id: 14, 
+                relacional:1,
                 categoria: 'categoria 2', 
                 titulo: 'Fase 2', 
                 duracion: '180 días', 
                 producto1: 'Immune Bio Green Cell', 
                 dosisp1: '10 ml. 2 veces al día', 
                 numbotellasmesp1: '3 Botellas', 
-                preciop1: 249.95                
+                preciop1: 249.95,
+                urlrel: 'https://biogreencell.com/product/condiciones-autoinmunes-en-etapa-inicial-un-ano-o-menos-con-la-condicion-fase2'                
             },
             //*****************************************************************************
             {
@@ -484,7 +500,8 @@ const vm = new Vue({
                 producto1: 'Immune Bio Green Cell', 
                 dosisp1: '40 ml. 4 veces al día', 
                 numbotellasmesp1: '20 Botellas', 
-                preciop1: 1120.00                
+                preciop1: 1120.00,
+                urlrel: 'https://biogreencell.com/product/condiciones-autoinmunes-en-etapa-avanzada-dos-anos-o-mas-con-la-condicion-fase1'                
             },
             {   
                 id: 16, 
@@ -494,11 +511,12 @@ const vm = new Vue({
                 producto1: 'Immune Bio Green Cell', 
                 dosisp1: '20 ml. 2 veces al día', 
                 numbotellasmesp1: '5 Botellas', 
-                preciop1: 359.95                
+                preciop1: 359.95,
+                urlrel: 'https://biogreencell.com/product/condiciones-autoinmunes-en-etapa-avanzada-dos-anos-o-mas-con-la-condicion-fase2'               
             },
              //*****************************************************************************
              {
-                id: 17, 
+                id: 171, /*este es el de las inflamatorias */
                 categoria: 'categoria 2', 
                 titulo: 'Fase 1', 
                 duracion: '120 días', 
@@ -509,10 +527,27 @@ const vm = new Vue({
                 producto2: 'Ascorbic Acid', 
                 dosisp2: 'Un scoop dos veces al día, mezclado con jugo de frutas o agua', 
                 numbotellasmesp2:'1 botella', 
-                preciop2: 54.95
+                preciop2: 54.95,
+                urlrel: 'https://biogreencell.com/product/condiciones-inflamatorias-en-etapa-inicial-un-ano-o-menos-con-la-condicion-fase1'
+            },
+            // ------------
+            {
+                id: 172, /*este es el de las sexuales */
+                categoria: 'categoria 2', 
+                titulo: 'Fase 1', 
+                duracion: '120 días', 
+                producto1: 'Immune Bio Green Cell', 
+                dosisp1: '20 ml. 4 veces al día', 
+                numbotellasmesp1: '10 Botellas', 
+                preciop1: 560.95,
+                producto2: 'Ascorbic Acid', 
+                dosisp2: 'Un scoop dos veces al día, mezclado con jugo de frutas o agua', 
+                numbotellasmesp2:'1 botella', 
+                preciop2: 54.95,
+                urlrel: 'https://biogreencell.com/product/condiciones-de-transmision-sexual-etapa-inicial-un-ano-o-menos-con-la-condicion-fase1'
             },
             {   
-                id: 18, 
+                id: 181, /*este es el de las inflamatorias */
                 categoria: 'categoria 2', 
                 titulo: 'Fase 2 (Mantenimiento)', 
                 duracion: '60 días', 
@@ -523,7 +558,24 @@ const vm = new Vue({
                 producto2: 'Ascorbic Acid', 
                 dosisp2: 'Un scoop dos veces al día, mezclado con jugo de frutas o agua', 
                 numbotellasmesp2:'1 botella', 
-                preciop2: 54.95
+                preciop2: 54.95,
+                urlrel: 'https://biogreencell.com/product/condiciones-inflamatorias-en-etapa-inicial-un-ano-o-menos-con-la-condicion-fase2'
+            },
+            // ------------
+            {   
+                id: 182, /*este es el de las sexuales */
+                categoria: 'categoria 2', 
+                titulo: 'Fase 2 (Mantenimiento)', 
+                duracion: '60 días', 
+                producto1: 'Immune Bio Green Cell', 
+                dosisp1: '10 ml. 2 veces al día', 
+                numbotellasmesp1: '3 Botellas', 
+                preciop1: 249.95,
+                producto2: 'Ascorbic Acid', 
+                dosisp2: 'Un scoop dos veces al día, mezclado con jugo de frutas o agua', 
+                numbotellasmesp2:'1 botella', 
+                preciop2: 54.95,
+                urlrel: 'https://biogreencell.com/product/condiciones-de-transmision-sexual-etapa-inicial-un-ano-o-menos-con-la-condicion-fase2'
             },
             //*****************************************************************************
             {
@@ -534,7 +586,8 @@ const vm = new Vue({
                 producto1: 'Immune Bio Green Cell', 
                 dosisp1: '32 ml. 4 veces al día', 
                 numbotellasmesp1: '16 Botellas', 
-                preciop1: 869.95                
+                preciop1: 896.95,
+                urlrel: 'https://biogreencell.com/product/condiciones-inflamatorias-en-etapa-avanzada-dos-anos-o-mas-con-la-condicion-fase1'                
             },
             {   
                 id: 20, 
@@ -544,7 +597,8 @@ const vm = new Vue({
                 producto1: 'Immune Bio Green Cell', 
                 dosisp1: '10 ml. 2 veces al día', 
                 numbotellasmesp1: '3 Botellas', 
-                preciop1: 249.95                
+                preciop1: 249.95,
+                urlrel: 'https://biogreencell.com/product/condiciones-inflamatorias-en-etapa-avanzada-dos-anos-o-mas-con-la-condicion-fase2'                
             },
              //*****************************************************************************
              {
@@ -559,7 +613,8 @@ const vm = new Vue({
                 producto2: 'Ascorbic Acid', 
                 dosisp2: 'Un scoop tres veces al día, mezclado con jugo de frutas o agua', 
                 numbotellasmesp2:'1 botella', 
-                preciop2: 54.95
+                preciop2: 54.95,
+                urlrel: 'https://biogreencell.com/product/condiciones-de-transmision-sexual-etapa-avanzada-dos-o-mas-anos-con-la-condicion-fase1'
             },
             {   
                 id: 22, 
@@ -573,7 +628,8 @@ const vm = new Vue({
                 producto2: 'Ascorbic Acid', 
                 dosisp2: 'Un scoop dos veces al día, mezclado con jugo de frutas o agua', 
                 numbotellasmesp2:'1 botella', 
-                preciop2: 54.95
+                preciop2: 54.95,
+                urlrel: 'https://biogreencell.com/product/condiciones-de-transmision-sexual-etapa-avanzada-dos-o-mas-anos-con-la-condicion-fase2'
             },
             //*****************************************************************************
             {
@@ -588,7 +644,8 @@ const vm = new Vue({
                 producto2: 'Ascorbic Acid', 
                 dosisp2: 'Un scoop tres veces al día, mezclado con jugo de frutas o agua', 
                 numbotellasmesp2:'1 botella', 
-                preciop2: 54.95
+                preciop2: 54.95,
+                urlrel: 'https://biogreencell.com/product/deficiencia-en-el-sistema-inmune-fase1'
             },
             {   
                 id: 24, 
@@ -602,7 +659,8 @@ const vm = new Vue({
                 producto2: 'Ascorbic Acid', 
                 dosisp2: 'Un scoop dos veces al día, mezclado con jugo de frutas o agua', 
                 numbotellasmesp2:'1 botella', 
-                preciop2: 54.95
+                preciop2: 54.95,
+                urlrel: 'https://biogreencell.com/product/deficiencia-en-el-sistema-inmune-fase2'
             },
              //*****************************************************************************
              {
@@ -621,7 +679,8 @@ const vm = new Vue({
                 producto3: 'WOUND FIXER', 
                 dosisp3: 'Aplicar sobre la zona afectada de 2 a 3 veces x dia', 
                 numbotellasmesp3:'1 botella', 
-                preciop2: 44.95
+                preciop2: 44.95,
+                urlrel: 'https://biogreencell.com/product/condiciones-de-la-piel-etapa-inicial-un-ano-o-menos-con-la-condicion-fase-1'
             },
             {   
                 id: 26, 
@@ -639,7 +698,8 @@ const vm = new Vue({
                 producto3: 'WOUND FIXER', 
                 dosisp3: 'Aplicar sobre la zona afectada de 2 a 3 veces x dia', 
                 numbotellasmesp3:'1 botella', 
-                preciop3: 44.95
+                preciop3: 44.95,
+                urlrel: 'https://biogreencell.com/product/condiciones-de-la-piel-etapa-inicial-un-ano-o-menos-con-la-condicion-fase-2'
             },
             //*****************************************************************************
             {
@@ -650,11 +710,12 @@ const vm = new Vue({
                 producto1: 'Immune Bio Green Cell', 
                 dosisp1: '32 ml. 4 veces al día', 
                 numbotellasmesp1: '16 Botellas', 
-                preciop1: 869.95,
+                preciop1: 896.95,
                 producto2: 'Ascorbic Acid', 
                 dosisp2: 'Un scoop dos veces al día, mezclado con jugo de frutas o agua', 
                 numbotellasmesp2:'1 botella', 
-                preciop2: 54.95
+                preciop2: 54.95,
+                urlrel: 'https://biogreencell.com/product/condiciones-de-la-piel-etapa-avanzada-dos-o-mas-anos-con-la-condicion-fase-1'
             },
             {   
                 id: 28, 
@@ -668,7 +729,8 @@ const vm = new Vue({
                 producto2: 'Ascorbic Acid', 
                 dosisp2: 'Un scoop dos veces al día, mezclado con jugo de frutas o agua', 
                 numbotellasmesp2:'1 botella', 
-                preciop2: 54.95
+                preciop2: 54.95,
+                urlrel: 'https://biogreencell.com/product/condiciones-de-la-piel-etapa-avanzada-dos-o-mas-anos-con-la-condicion-fase-2'
             },
              //*****************************************************************************
              {
@@ -683,7 +745,8 @@ const vm = new Vue({
                 producto2: 'Ascorbic Acid', 
                 dosisp2: 'Un scoop dos veces al día, mezclado con jugo de frutas o agua', 
                 numbotellasmesp2:'1 botella', 
-                preciop2: 54.95
+                preciop2: 54.95,
+                urlrel: 'https://biogreencell.com/product/condiciones-del-sistema-respiratorio-etapa-inicial-un-ano-o-menos-con-la-condicion-fase1'
             },
             {   
                 id: 30, 
@@ -697,7 +760,8 @@ const vm = new Vue({
                 producto2: 'Ascorbic Acid', 
                 dosisp2: 'Un scoop dos veces al día, mezclado con jugo de frutas o agua', 
                 numbotellasmesp2:'1 botella', 
-                preciop2: 54.95
+                preciop2: 54.95,
+                urlrel: 'https://biogreencell.com/product/condiciones-del-sistema-respiratorio-etapa-inicial-un-ano-o-menos-con-la-condicion-fase2'
             },
              //*****************************************************************************
              {
@@ -708,11 +772,12 @@ const vm = new Vue({
                 producto1: 'Immune Bio Green Cell', 
                 dosisp1: '40 ml. 4 veces al día', 
                 numbotellasmesp1: '20 Botellas', 
-                preciop1: 51120.00,
+                preciop1: 1120.00,
                 producto2: 'Ascorbic Acid', 
                 dosisp2: 'Un scoop dos veces al día, mezclado con jugo de frutas o agua', 
                 numbotellasmesp2:'1 botella', 
-                preciop2: 54.95
+                preciop2: 54.95,
+                urlrel: 'https://biogreencell.com/product/condiciones-del-sistema-respiratorio-etapa-avanzada-dos-anos-o-mas-con-la-condicion-fase1'
             },
             {   
                 id: 32, 
@@ -726,7 +791,8 @@ const vm = new Vue({
                 producto2: 'Ascorbic Acid', 
                 dosisp2: 'Un scoop dos veces al día, mezclado con jugo de frutas o agua', 
                 numbotellasmesp2:'1 botella', 
-                preciop2: '54.95'
+                preciop2: '54.95',
+                urlrel: 'https://biogreencell.com/product/condiciones-del-sistema-respiratorio-etapa-avanzada-dos-anos-o-mas-con-la-condicion-fase2'
             },
 
         ],

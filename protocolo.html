@@ -55,9 +55,10 @@
                     <div class="cont_total">
                         <span class="descrip_total">Total</span>
                         <span class="precio_total">$ {{this.mostrarTotal([this.fases[0].preciop2, this.fases[0].preciop1])}}</span>
-                    </div>
-    
-                    <a class="btn_comprar_protocolo" href="https://biogreencell.com/product/condiciones-progresivas-del-sistema-digestivo-etapas-1-y-2-fase1">Comprar ahora<i class="remixicon-shopping-cart-line"></i></a>
+                    </div>   
+                    
+                    <a class="btn_comprar_protocolo" v-bind:href="this.fases[0].urlrel">Comprar ahora<i class="remixicon-shopping-cart-line"></i></a>
+                    
                 </div>
 
                 
@@ -98,7 +99,7 @@
                         <span class="precio_total">$ {{this.mostrarTotal([this.fases[1].preciop2, this.fases[1].preciop1])}}</span>
                     </div>
     
-                    <a class="btn_comprar_protocolo" href="https://biogreencell.com/product/condiciones-progresivas-del-sistema-digestivo-etapas-1-y-2-fase2">Comprar ahora<i class="remixicon-shopping-cart-line"></i></a>
+                    <a class="btn_comprar_protocolo" v-bind:href="this.fases[1].urlrel">Comprar ahora<i class="remixicon-shopping-cart-line"></i></a>
                 </div>
     
             </div>
