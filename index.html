@@ -12,31 +12,135 @@
 </head>
 
 <body>
-    <div class="protocolo">
-        <h1 class="titulo_protocolo">Seleccione su condición para ver el protocolo sugerido</h1>
-        <main> 
-                <div id='categorias' class="categorias">
-                        <div class="cont_categoria" v-for="(condiciones, index) in this.condiciones_cat" :key="condiciones.id">
-                            <p class="titulo_cont_categoria">{{ condiciones.titulo }}</p>
-                                    <ul class="enfermedades_por_categoria" v-if="condiciones.listaReducida">
-                                            <li v-for="condicion in condiciones.condicion.slice(0,5)"><span><i class="remixicon-checkbox-blank-circle-fill"></i></span> {{ condicion.title }}</li>
-                                    </ul>
-                                    <ul class="enfermedades_por_categoria" v-else>
-                                            <li v-for="condicionlista in condiciones.condicion"><span><i class="remixicon-checkbox-blank-circle-fill"></i></span> {{ condicionlista.title }}</li>
-                                    </ul>
-                            <div class="row-btn">
-                                <button v-show="condiciones.listaReducida && condiciones.condicion.length >= 6" class="btnexpandir" @click="cambioEstado(condiciones.id, condiciones_cat)">Ver mas condiciones</button>
-                                <button v-show="!condiciones.listaReducida" class="btnexpandir" @click="cambioEstado(condiciones.id, condiciones_cat)">Ver menos</button>
-                                <a class="btn_verprotocolo" href="protocolo.html">Ver protocolo <i class="remixicon-arrow-right-s-line"></i></a>
-                            </div>
-                        </div>
-                    </div>
-            <h1>VUE ROUTER</h1>
+        <main>
             <router-view>
                 
             </router-view>
         </main>   
-    </div>
+
+
+    <!--######################
+        COMPONENTE PROTOCOLO
+        #####################-->
+        <script type="text/x-template" id="protocolo">
+            
+            <div class="protocolo_product_ats" v-if="/^([0-9])*$/.test(this.$route.params.id)">
+                <h4 class="after_titulo">Protocolo sugerido para su condición</h4>
+                <h1 class="titulo_protocolo">Protocolo integrativo de alta complejidad<br> <span>Categoría 3</span></h1>
+                <h4 class="descripcion_protocolo">Condiciones progresivas del sistema digestivo etapas 1 y 2</h4>
+                <ul class="lista_enfermedades">
+                    <li v-for="condicion in condiciones_cat[this.urlID(this.$route.params.id)].condicion"><i class="remixicon-checkbox-blank-circle-fill"></i>{{ condicion.title }}</li>
+                </ul>
+            
+                        <div class="cont_fase">
+                            <div class="protocolos_fase">
+                                <div class="titulo_fase">
+                                    <h1>{{this.fases[0].titulo}}</h1>
+                                    <span>- Duración del protocolo {{this.fases[0].duracion}}</span>
+                                    <button><i class="remixicon-question-line"></i></button>
+                                </div>
+                                <div class="productos_protocolo">
+                                    <div class="image_producto_protocolo">
+                                        <img src="assets/img/botellas.jpg" alt="">
+                                    </div>
+                                    <div class="descripcion_producto_protocolo">
+                                        <p class="nombre_producto_protocolo">{{this.fases[0].producto1}}</p>
+                                        <p class="precio_producto_protocolo"><span>$</span>{{this.fases[0].preciop1}}</p>
+                                        <p class="dosis_producto_protocolo">Dosis: {{this.fases[0].dosisp1}}</p>  
+                                        <p class="botellas_producto_protocolo">{{ this.fases[0].numbotellasmesp1}}</p>                      
+                                    </div>
+                                </div>
+                
+                                <div class="productos_protocolo">
+                                        <div class="image_producto_protocolo">
+                                            <img src="assets/img/acido.jpg" alt="">
+                                        </div>
+                                        <div class="descripcion_producto_protocolo">
+                                            <p class="nombre_producto_protocolo">{{this.fases[0].producto2}}</p>
+                                            <p class="precio_producto_protocolo"><span>$</span>{{this.fases[0].preciop2}}</p>
+                                            <p class="dosis_producto_protocolo">Dosis: {{this.fases[0].dosisp2}}</p>
+                                            <p class="botellas_producto_protocolo">{{ this.fases[0].numbotellasmesp2}}</p>
+                                        </div>
+                                </div>
+                
+                                <div class="cont_total">
+                                    <span class="descrip_total">Total</span>
+                                    <span class="precio_total">$ {{this.mostrarTotal([this.fases[0].preciop2, this.fases[0].preciop1])}}</span>
+                                </div>   
+                                
+                                <a class="btn_comprar_protocolo" v-bind:href="this.fases[0].urlrel">Comprar ahora<i class="remixicon-shopping-cart-line"></i></a>
+                                
+                            </div>
+            
+                            <div class="protocolos_fase">
+                                <div class="titulo_fase">
+                                    <h1>{{this.fases[1].titulo}}</h1>
+                                    <span>- Duración del protocolo {{this.fases[1].duracion}}</span>
+                                    <button><i class="remixicon-question-line"></i></button>
+                                </div>
+                                <div class="productos_protocolo">
+                                    <div class="image_producto_protocolo">
+                                        <img src="assets/img/botellas.jpg" alt="">
+                                    </div>
+                                    <div class="descripcion_producto_protocolo">
+                                        <p class="nombre_producto_protocolo">{{this.fases[1].producto1}}</p>
+                                        <p class="precio_producto_protocolo"><span>$</span>{{this.fases[1].preciop1}}</p>
+                                        <p class="dosis_producto_protocolo">Dosis: {{this.fases[1].dosisp1}}</p>
+                                        <p class="botellas_producto_protocolo">{{ this.fases[1].numbotellasmesp1}}</p>                        
+                                    </div>
+                                </div>
+                
+                                <div class="productos_protocolo">
+                                        <div class="image_producto_protocolo">
+                                            <img src="assets/img/acido.jpg" alt="">
+                                        </div>
+                                        <div class="descripcion_producto_protocolo">
+                                            <p class="nombre_producto_protocolo">{{this.fases[1].producto2}}</p>
+                                            <p class="precio_producto_protocolo"><span>$</span>{{this.fases[1].preciop2}}</p>
+                                            <p class="dosis_producto_protocolo">Dosis: {{this.fases[1].dosisp2}}</p>
+                                            <p class="botellas_producto_protocolo">{{ this.fases[1].numbotellasmesp2}}</p>
+                                        </div>
+                                </div>
+                
+                                <div class="cont_total">
+                                    <span class="descrip_total">Total</span>
+                                    <span class="precio_total">$ {{this.mostrarTotal([this.fases[1].preciop2, this.fases[1].preciop1])}}</span>
+                                </div>
+                
+                                <a class="btn_comprar_protocolo" v-bind:href="this.fases[1].urlrel">Comprar ahora<i class="remixicon-shopping-cart-line"></i></a>
+                            </div>
+                
+                        </div>
+                </div>
+                <span v-else>{{this.$router.push('/')}}</span>
+    </script>     
+    <!--######################
+        FIN PROTOCOLO
+        #####################-->
+    <!--######################
+        COMPONENTE CONDICIONES
+        #####################-->
+    <script type="text/x-template" id="condiciones">
+        <div class="protocolo">
+            <h1 class="titulo_protocolo">Seleccione su condición para ver el protocolo sugerido</h1>
+                    <div id='categorias' class="categorias">
+                            <div class="cont_categoria" v-for="(condiciones, index) in this.condiciones_cat" :key="condiciones.id">
+                                <p class="titulo_cont_categoria">{{ condiciones.titulo }}</p>
+                                        <ul class="enfermedades_por_categoria" v-if="condiciones.listaReducida">
+                                                <li v-for="condicion in condiciones.condicion.slice(0,5)"><span><i class="remixicon-checkbox-blank-circle-fill"></i></span> {{ condicion.title }}</li>
+                                        </ul>
+                                        <ul class="enfermedades_por_categoria" v-else>
+                                                <li v-for="condicionlista in condiciones.condicion"><span><i class="remixicon-checkbox-blank-circle-fill"></i></span> {{ condicionlista.title }}</li>
+                                        </ul>
+                                <div class="row-btn">
+                                    <button v-show="condiciones.listaReducida && condiciones.condicion.length >= 6" class="btnexpandir" @click="cambioEstado(condiciones.id, condiciones_cat)">Ver mas condiciones</button>
+                                    <button v-show="!condiciones.listaReducida" class="btnexpandir" @click="cambioEstado(condiciones.id, condiciones_cat)">Ver menos</button>
+                                    <router-link class="btn_verprotocolo" :to="'/protocolo/' + condiciones.id">Ver protocolo <i class="remixicon-arrow-right-s-line"></i></router-link>
+                                </div>
+                            </div>
+                    </div> 
+        </div>
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
     <script src="https://unpkg.com/vue-router@3.0.7/dist/vue-router.js"></script>
     <script src="assets/js/module_conditions.js"></script>
