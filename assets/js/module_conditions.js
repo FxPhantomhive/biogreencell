@@ -107,7 +107,7 @@ const data = {
                 {n: '46', title: 'Hepatitis B'},             
             ],
         },
-        {id:2, num:'2', listaReducida:true, btnExpandir: 'Ver menos', categoria: 'categoria 4', titulo: 'CONDICIONES AUTOINMUNES EN ETAPA AVANZADA (DOS AÑOS O MAS CON LA CONDICION)', 
+        {id:2, num:'2', listaReducida:true, btnExpandir: 'Ver menos', relacional: 2,categoria: 'categoria 4', titulo: 'CONDICIONES AUTOINMUNES EN ETAPA AVANZADA (DOS AÑOS O MAS CON LA CONDICION)', 
             condicion: [ //----
                 {n: '47', title: 'Esclerosis multiple. Etapa inicial (2 años o menos)'},
                 {n: '48', title: 'Sclerodemas. Etapa inicial (2 años o menos)'},
@@ -123,18 +123,18 @@ const data = {
                 {n: '58', title: 'Hepatitis B'},    
             ],
         },
-        {id:3, num:'3', listaReducida:true, btnExpandir: 'Ver menos', categoria: 'categoria 3', titulo: 'CONDICIONES PROGRESIVAS DE LA PIEL ETAPAS 1 Y 2', 
+        {id:3, num:'3', listaReducida:true, btnExpandir: 'Ver menos',relacional: 3 ,categoria: 'categoria 3', titulo: 'CONDICIONES PROGRESIVAS DE LA PIEL ETAPAS 1 Y 2', 
             condicion: [ //listo
                 {n: '22', title: 'Piel Etapa 2 y 3'},
                        
             ],
         },
-        {id:4, num:'4', listaReducida:true, btnExpandir: 'Ver menos', categoria: 'categoria 4', titulo: 'CONDICIONES PROGRESIVAS DE LA PIEL ETAPAS 3 Y 4', 
+        {id:4, num:'4', listaReducida:true, btnExpandir: 'Ver menos', relacional: 4,categoria: 'categoria 4', titulo: 'CONDICIONES PROGRESIVAS DE LA PIEL ETAPAS 3 Y 4', 
             condicion: [
                 {n: '34', title: 'piel Etapa 3 y 4'},                           
             ],
         },
-        {id:5, listaReducida:true, btnExpandir: 'Ver menos', num:'4', categoria: 'categoria 2', titulo: 'CONDICIONES DE TRANSMISION SEXUAL ETAPA INICIAL (UN AÑO O MENOS CON LA CONDICION)', 
+        {id:5, listaReducida:true, btnExpandir: 'Ver menos', num:'4', relacional: 5,categoria: 'categoria 2', titulo: 'CONDICIONES DE TRANSMISION SEXUAL ETAPA INICIAL (UN AÑO O MENOS CON LA CONDICION)', 
             condicion: [
                 {n: '92', title: 'Clamidia. Etapa inicial'},
                 {n: '93', title: 'Herpes genital. Etapa inicial'},
@@ -144,7 +144,7 @@ const data = {
                 {n: '97', title: 'Tricomoniasis. Etapa inicial'},                          
             ],
         },
-        {id:6, num:'6', listaReducida:true, btnExpandir: 'Ver menos', categoria: 'categoria 4', titulo: 'CONDICIONES DE TRANSMISION SEXUAL ETAPA AVANZADA (DOS O MAS AÑOS CON LA CONDICION)', 
+        {id:6, num:'6', listaReducida:true, btnExpandir: 'Ver menos', relacional: 6,categoria: 'categoria 4', titulo: 'CONDICIONES DE TRANSMISION SEXUAL ETAPA AVANZADA (DOS O MAS AÑOS CON LA CONDICION)', 
             condicion: [
                 {n: '131', title: 'Clamidia. Etapa aguda'},
                 {n: '132', title: 'Herpes genital. Etapa aguda'},
@@ -154,7 +154,7 @@ const data = {
                 {n: '136', title: 'Tricomoniasis. Etapa aguda'},                      
             ],
         },
-        {id:7, listaReducida:true, btnExpandir: 'Ver menos', num:'7', categoria: 'categoria 2', titulo: 'CONDICIONES DEL SISTEMA RESPIRATORIO ETAPA INICIAL (UN AÑO O MENOS  CON LA CONDICION)', 
+        {id:7, listaReducida:true, btnExpandir: 'Ver menos', num:'7',relacional: 7, categoria: 'categoria 2', titulo: 'CONDICIONES DEL SISTEMA RESPIRATORIO ETAPA INICIAL (UN AÑO O MENOS  CON LA CONDICION)', 
             condicion: [
                 {n: '156', title: 'Insuficiencia respiratoria. Etapa inicial'},
                 {n: '157', title: 'Rinosinusitis. Etapa inicial'},
@@ -166,7 +166,7 @@ const data = {
                 {n: '163', title: 'Enfermedad pulmonar obstructiva crónica. Etapa inicial'},                           
             ],
         },
-        {id:8, num:'8', listaReducida:true, btnExpandir: 'Ver menos', categoria: 'categoria 4', titulo: 'CONDICIONES DEL SISTEMA RESPIRATORIO ETAPA AVANZADA (DOS AÑOS O  MAS  CON LA CONDICION)', 
+        {id:8, num:'8', listaReducida:true, btnExpandir: 'Ver menos', relacional: 8,categoria: 'categoria 4', titulo: 'CONDICIONES DEL SISTEMA RESPIRATORIO ETAPA AVANZADA (DOS AÑOS O  MAS  CON LA CONDICION)', 
             condicion: [
                 {n: '164', title: 'Insuficiencia respiratoria. Etapa aguda'},
                 {n: '165', title: 'Rinosinusitis. Etapa aguda'},
@@ -178,7 +178,7 @@ const data = {
                 {n: '171', title: 'Enfermedad pulmonar obstructiva crónica. Etapa aguda'},                                         
             ],
         },
-        {id:9, listaReducida:true, btnExpandir: 'Ver menos', num:'9', categoria: 'categoria 2', titulo: 'CONDICIONES INFLAMATORIAS EN ETAPA INICIAL (UN AÑO O MENOS CON LA CONDICION)', 
+        {id:9, listaReducida:true, btnExpandir: 'Ver menos', num:'9', relacional: 9,categoria: 'categoria 2', titulo: 'CONDICIONES INFLAMATORIAS EN ETAPA INICIAL (UN AÑO O MENOS CON LA CONDICION)', 
             condicion: [
                 {n: '59', title: 'Celulitis periorbitaria. Etapa inicial'},
                 {n: '60', title: 'Cerebritis. Etapa inicial'},
@@ -215,7 +215,7 @@ const data = {
                 {n: '91', title: 'Diverticulitis'},           
             ],
         },
-        {id:10, num:'10', listaReducida:true, btnExpandir: 'Ver menos', categoria: 'categoria 3', titulo: 'CONDICIONES INFLAMATORIAS EN ETAPA AVANZADA (DOS AÑOS O MAS CON LA CONDICION)', 
+        {id:10, num:'10', listaReducida:true, btnExpandir: 'Ver menos', relacional: 10,categoria: 'categoria 3', titulo: 'CONDICIONES INFLAMATORIAS EN ETAPA AVANZADA (DOS AÑOS O MAS CON LA CONDICION)', 
             condicion: [
                 {n: '98', title: 'Celulitis periorbitaria. Etapa aguda'},
                 {n: '99', title: 'Cerebritis. Etapa aguda'},
@@ -252,7 +252,7 @@ const data = {
                 {n: '130', title: 'Diverticulitis'},         
             ],
         },
-        {id:11, listaReducida:true, btnExpandir: 'Ver menos', num:'11', categoria: 'categoria 2', titulo: 'CONDICIONES DE LA PIEL ETAPA INICIAL (UN AÑO O MENOS CON LA CONDICION)', 
+        {id:11, listaReducida:true, btnExpandir: 'Ver menos', num:'11', relacional: 11,categoria: 'categoria 2', titulo: 'CONDICIONES DE LA PIEL ETAPA INICIAL (UN AÑO O MENOS CON LA CONDICION)', 
             condicion: [
                 {n: '138', title: 'Eczema. Etapa inicial'},
                 {n: '139', title: 'Acné. Etapa inicial'},
@@ -265,7 +265,7 @@ const data = {
                 {n: '146', title: 'Amiloidosis. Etapa inicial'},                            
             ],
         },
-        {id:12, num:'12', listaReducida:true, btnExpandir: 'Ver menos', categoria: 'categoria 3', titulo: 'CONDICIONES DE LA PIEL ETAPA AVANZADA (DOS O MAS AÑOS CON LA CONDICION)', 
+        {id:12, num:'12', listaReducida:true, btnExpandir: 'Ver menos', relacional: 12,categoria: 'categoria 3', titulo: 'CONDICIONES DE LA PIEL ETAPA AVANZADA (DOS O MAS AÑOS CON LA CONDICION)', 
             condicion: [
                 {n: '147', title: 'Eczema. Etapa aguda'},
                 {n: '148', title: 'Acné. Etapa aguda'},
@@ -278,7 +278,7 @@ const data = {
                 {n: '155', title: 'Amiloidosis. Etapa aguda'},    
             ],
         },
-        {id:13, num:'13', listaReducida:true, btnExpandir: 'Ver menos', categoria: 'categoria 2', titulo: 'CONDICIONES PROGRESIVAS DEL SISTEMA DIGESTIVO ETAPAS 1 Y 2', 
+        {id:13, num:'13', listaReducida:true, btnExpandir: 'Ver menos',relacional: 13, categoria: 'categoria 2', titulo: 'CONDICIONES PROGRESIVAS DEL SISTEMA DIGESTIVO ETAPAS 1 Y 2', 
             condicion: [
                 {n: '1', title: 'Esófago Etapa 1 y 2'},
                 {n: '2', title: 'Estomago Etapa 1 y 2'},
@@ -287,7 +287,7 @@ const data = {
                 {n: '5', title: 'Garganta Etapa 1 y 2'},
             ],
         },
-        {id:14, num:'14', listaReducida:true, btnExpandir: 'Ver menos', categoria: 'categoria 4', titulo: 'CONDICIONES PROGRESIVAS DEL SISTEMA DIGESTIVO ETAPAS 3 Y 4', 
+        {id:14, num:'14', listaReducida:true, btnExpandir: 'Ver menos',relacional: 14 ,categoria: 'categoria 4', titulo: 'CONDICIONES PROGRESIVAS DEL SISTEMA DIGESTIVO ETAPAS 3 Y 4', 
             condicion: [ //lista
                 {n: '1', title: 'Esófago Etapa 3 y 4'},
                 {n: '2', title: 'Estomago Etapa 3 y 4'},
@@ -296,7 +296,7 @@ const data = {
                 {n: '5', title: 'Garganta Etapa 3 y 4'},
             ],
         },
-        {id:15, num:'15', listaReducida:true, btnExpandir: 'Ver menos', categoria: 'categoria 3', titulo: 'CONDICIONES PROGRESIVAS DEL SISTEMA INMUNE ETAPAS 1 Y 2', 
+        {id:15, num:'15', listaReducida:true, btnExpandir: 'Ver menos', relacional: 15,categoria: 'categoria 3', titulo: 'CONDICIONES PROGRESIVAS DEL SISTEMA INMUNE ETAPAS 1 Y 2', 
             condicion: [
                 {n: '11', title: 'Mama Etapa 1 y 2'},
                 {n: '12', title: 'Pulmones 1 y 2'},
@@ -311,7 +311,7 @@ const data = {
                 {n: '21', title: 'Cabeza Etapa 1 y 2'},
             ],
         },            
-         {id:16, num:'16', listaReducida:true, btnExpandir: 'Ver menos', categoria: 'categoria 4', titulo: 'CONDICIONES PROGRESIVAS DEL SISTEMA INMUNE ETAPAS 3 Y 4', 
+         {id:16, num:'16', listaReducida:true, btnExpandir: 'Ver menos', relacional: 16,categoria: 'categoria 4', titulo: 'CONDICIONES PROGRESIVAS DEL SISTEMA INMUNE ETAPAS 3 Y 4', 
             condicion: [//listo
                 {n: '23', title: 'Mama Etapa 3 y 4'},
                 {n: '24', title: 'Pulmones 3 y 4'},
@@ -326,7 +326,7 @@ const data = {
                 {n: '33', title: 'Cabeza Etapa 3 y 4'},       
             ],
         }, 
-        {id:17, num:'17', listaReducida:true, btnExpandir: 'Ver menos', categoria: 'categoria 4', titulo: 'DEFICIENCIA EN EL SISTEMA INMUNE', 
+        {id:17, num:'17', listaReducida:true, btnExpandir: 'Ver menos', relacional: 17,categoria: 'categoria 4', titulo: 'DEFICIENCIA EN EL SISTEMA INMUNE', 
             condicion: [
                 {n: '137', title: 'Deficiencia del sistema inmune'},                                         
             ],
@@ -337,6 +337,7 @@ const data = {
     fases: [
         {
             id: 1, 
+            relacional: 13,
             categoria: 'categoria 2', 
             titulo: 'Fase 1', 
             duracion: '180 días', 
@@ -352,6 +353,7 @@ const data = {
         },
         {   
             id: 2, 
+            relacional: 13,
             categoria: 'categoria 2', 
             titulo: 'Fase 2', 
             duracion: '60 días', 
@@ -368,6 +370,7 @@ const data = {
          //*****************************************************************************
         {
             id: 3, 
+            relacional: 14,
             categoria: 'categoria 4', 
             titulo: 'Fase 1', 
             duracion: '180 - 240 días', 
@@ -383,6 +386,7 @@ const data = {
         },
         {   
             id: 4, 
+            relacional: 14,
             categoria: 'categoria 4', 
             titulo: 'Fase 2', 
             duracion: '180 días', 
@@ -398,7 +402,8 @@ const data = {
         },
          //*****************************************************************************
         {
-            id: 5, 
+            id: 5,
+            relacional: 15, 
             categoria: 'categoria 3', 
             titulo: 'Fase 1', 
             duracion: '180 días', 
@@ -414,6 +419,7 @@ const data = {
         },
         {   
             id: 6, 
+            relacional: 15,
             categoria: 'categoria 3', 
             titulo: 'Fase 2', 
             duracion: '180 días', 
@@ -430,6 +436,7 @@ const data = {
          //*****************************************************************************
         {
             id: 7, 
+            relacional: 3,
             categoria: 'categoria 3', 
             titulo: 'Fase 1', 
             duracion: '180 días', 
@@ -449,6 +456,7 @@ const data = {
         },
         {   
             id: 8, 
+            relacional: 3,
             categoria: 'categoria 3', 
             titulo: 'Fase 2', 
             duracion: '180 días', 
@@ -469,6 +477,7 @@ const data = {
          //*****************************************************************************
         {
             id: 9, 
+            relacional: 16,
             categoria: 'categoria 4', 
             titulo: 'Fase 1', 
             duracion: '180 días', 
@@ -484,6 +493,7 @@ const data = {
         },
         {   
             id: 10, 
+            relacional: 16,
             categoria: 'categoria 4', 
             titulo: 'Fase 2', 
             duracion: '180 días', 
@@ -500,6 +510,7 @@ const data = {
          //*****************************************************************************
         {
             id: 11, 
+            relacional: 4,
             categoria: 'categoria 4', 
             titulo: 'Fase 1', 
             duracion: '180 días', 
@@ -519,6 +530,7 @@ const data = {
         },
         {   
             id: 12, 
+            relacional: 4,
             categoria: 'categoria 4', 
             titulo: 'Fase 2', 
             duracion: '180 días', 
@@ -560,6 +572,7 @@ const data = {
         //*****************************************************************************
         {
             id: 15, 
+            relacional: 2,
             categoria: 'categoria 4', 
             titulo: 'Fase 1', 
             duracion: '180 días', 
@@ -571,6 +584,7 @@ const data = {
         },
         {   
             id: 16, 
+            relacional: 2,
             categoria: 'categoria 4', 
             titulo: 'Fase 2', 
             duracion: '180 días', 
@@ -583,6 +597,7 @@ const data = {
          //*****************************************************************************
          {
             id: 171, /*este es el de las inflamatorias */
+            relacional: 9,
             categoria: 'categoria 2', 
             titulo: 'Fase 1', 
             duracion: '120 días', 
@@ -599,6 +614,8 @@ const data = {
         // ------------
         {
             id: 172, /*este es el de las sexuales */
+            relacional: 9,
+            relacional: 5,
             categoria: 'categoria 2', 
             titulo: 'Fase 1', 
             duracion: '120 días', 
@@ -630,6 +647,7 @@ const data = {
         // ------------
         {   
             id: 182, /*este es el de las sexuales */
+            relacional: 5,
             categoria: 'categoria 2', 
             titulo: 'Fase 2 (Mantenimiento)', 
             duracion: '60 días', 
@@ -646,6 +664,7 @@ const data = {
         //*****************************************************************************
         {
             id: 19, 
+            relacional: 10,
             categoria: 'categoria 3', 
             titulo: 'Fase 1', 
             duracion: '180 días', 
@@ -657,6 +676,7 @@ const data = {
         },
         {   
             id: 20, 
+            relacional: 10,
             categoria: 'categoria 3', 
             titulo: 'Fase 2 (Mantenimiento)', 
             duracion: '60 días', 
@@ -669,6 +689,7 @@ const data = {
          //*****************************************************************************
          {
             id: 21, 
+            relacional: 6,
             categoria: 'categoria 4', 
             titulo: 'Fase 1', 
             duracion: '180 días', 
@@ -684,6 +705,7 @@ const data = {
         },
         {   
             id: 22, 
+            relacional: 6,
             categoria: 'categoria 4', 
             titulo: 'Fase 2 (Mantenimiento)', 
             duracion: '60 días', 
@@ -700,6 +722,7 @@ const data = {
         //*****************************************************************************
         {
             id: 23, 
+            relacional: 17,
             categoria: 'categoria 4', 
             titulo: 'Fase 1', 
             duracion: '12 meses.', 
@@ -715,6 +738,7 @@ const data = {
         },
         {   
             id: 24, 
+            relacional: 17,
             categoria: 'categoria 4', 
             titulo: 'Fase 2 (Mantenimiento)', 
             duracion: '60 días', 
@@ -731,6 +755,7 @@ const data = {
          //*****************************************************************************
          {
             id: 25, 
+            relacional: 11,
             categoria: 'categoria 2', 
             titulo: 'Fase 1', 
             duracion: '120 días', 
@@ -750,6 +775,7 @@ const data = {
         },
         {   
             id: 26, 
+            relacional: 11,
             categoria: 'categoria 2', 
             titulo: 'Fase 2', 
             duracion: '90 días', 
@@ -770,6 +796,7 @@ const data = {
         //*****************************************************************************
         {
             id: 27, 
+            relacional: 12,
             categoria: 'categoria 3', 
             titulo: 'Fase 1', 
             duracion: '180 días', 
@@ -785,6 +812,7 @@ const data = {
         },
         {   
             id: 28, 
+            relacional: 12,
             categoria: 'categoria 4', 
             titulo: 'Fase 2 (Mantenimiento)', 
             duracion: '90 días', 
@@ -801,6 +829,7 @@ const data = {
          //*****************************************************************************
          {
             id: 29, 
+            relacional: 7,
             categoria: 'categoria 2', 
             titulo: 'Fase 1', 
             duracion: '120 días', 
@@ -816,6 +845,7 @@ const data = {
         },
         {   
             id: 30, 
+            relacional: 7,
             categoria: 'categoria 2', 
             titulo: 'Fase 2 (Mantenimiento)', 
             duracion: '60 días', 
@@ -832,6 +862,7 @@ const data = {
          //*****************************************************************************
          {
             id: 31, 
+            relacional: 8,
             categoria: 'categoria 4', 
             titulo: 'Fase 1', 
             duracion: '180 días', 
@@ -847,6 +878,7 @@ const data = {
         },
         {   
             id: 32, 
+            relacional: 8,
             categoria: 'categoria 2', 
             titulo: 'Fase 2 (Mantenimiento)', 
             duracion: '60 días', 
